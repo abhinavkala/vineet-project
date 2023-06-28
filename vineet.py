@@ -167,10 +167,12 @@ def main():
 
         input_df = pd.DataFrame(input_data)
 
-        # Path to the .pkl file
-        pkl_file_path = r"C:\Users\Testbook\Downloads\vineet\pipeline_model.pkl"
+                # Update the file path to reflect the correct location in Streamlit cloud
+        pkl_file_path = "/app/pipeline_model.pkl"
 
-        pipeline = pickle.load(open(pkl_file_path, "rb"))
+                # Load the pickle file
+        with open(pkl_file_path, "rb") as file:
+                    pipeline = pickle.load(file)
         predictions = pipeline.predict(input_df)
 
         st.success(predictions[0])
