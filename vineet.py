@@ -10,7 +10,7 @@ Original file is located at
 # !npm install localtunnel
 SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True
 # Core Pkgs
-import scikit-learn as sklearn
+import sklearn
 import streamlit as st
 import scipy
 import scipy.stats
