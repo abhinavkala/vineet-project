@@ -190,7 +190,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-Make sure to create a folder named "model" within your GitHub repository and place the pickle file pipeline_model.pkl inside it.
 
 
 
