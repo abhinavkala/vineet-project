@@ -178,7 +178,7 @@ def main():
         input_df = pd.DataFrame(input_data)
 
         # Update the file path to reflect the correct location in Streamlit cloud
-        pkl_file_path = "vineet-project/pipeline_model.pkl"
+        pkl_file_path = "pipeline_model.pkl"
 
         # Load the pickle file
         with open(pkl_file_path, "rb") as file:
