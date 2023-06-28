@@ -1,7 +1,7 @@
 # !pip install -q streamlit
 # !npm install localtunnel
 # Core Pkgs
-#import sklearn
+import sklearn
 import streamlit as st
 import scipy
 import scipy.stats
