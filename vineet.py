@@ -175,14 +175,25 @@ def main():
                     'transmission': [transmission],
                     'owner': [owner]}
 
-        input_df = pd.DataFrame(input_data)
-        pipeline = pickle.load(open("pipeline_model.pkl", "rb"))
+       input_df = pd.DataFrame(input_data)
+
+        # Update the file path to reflect the correct location in Streamlit cloud
+        pkl_file_path = "vineet-project/pipeline_model.pkl"
+
+        # Load the pickle file
+        with open(pkl_file_path, "rb") as file:
+          pipeline = pickle.load(file)
         predictions = pipeline.predict(input_df)
 
         st.success(predictions[0])
 
 
-if __name__ == '__main__':
-	main()
+if __name__ == "__main__":
+    main()
+Make sure to create a folder named "model" within your GitHub repository and place the pickle file pipeline_model.pkl inside it.
+
+
+
+
 
 
