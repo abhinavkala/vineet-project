@@ -175,7 +175,7 @@ def main():
                     'transmission': [transmission],
                     'owner': [owner]}
 
-       input_df = pd.DataFrame(input_data)
+        input_df = pd.DataFrame(input_data)
 
         # Update the file path to reflect the correct location in Streamlit cloud
         pkl_file_path = "vineet-project/pipeline_model.pkl"
